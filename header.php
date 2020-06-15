@@ -20,7 +20,11 @@
         <li><a href="">Menu04</a></li>
       </ul>
 
-
-    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+    <div class="img-box">
+    
+      <img class="left" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+      <img class="back"  src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="">
+      <img class="right"  src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt=""> 
+    </div>
 
    </header>

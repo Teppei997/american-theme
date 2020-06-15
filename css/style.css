@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+.footer-main{
+    width: 1152px;
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+.articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* width: 960px; */
+    margin-bottom: 20px;
+}
+
+.left{
+    z-index: 20;
+}
+.back{
+    z-index: 10;
+}
+.right{
+    z-index: 20;
+}
+
