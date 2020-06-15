@@ -22,3 +22,4 @@ add_action( 'after_setup_theme', 'mytheme_set' );
 add_theme_support( 'menus' );
 
 
+add_theme_support('post-thumbnails');
