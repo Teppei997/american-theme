@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 <div class="main">
 
+
+
 <?php if (have_posts()):?>
 <!-- 投稿がある場合 -->
   <h2>最近の投稿</h2>
