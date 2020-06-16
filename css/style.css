@@ -105,15 +105,7 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 20px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-    
-=======
-    margin-left:0px;
->>>>>>> master
-=======
     margin: 0 auto;
->>>>>>> master
 }
 
 .articles-box {
