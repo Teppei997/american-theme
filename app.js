@@ -1,3 +1,1 @@
-$('.articles').mouseover(function(){
-
-});
+$(document).ready

@@ -20,11 +20,15 @@
         <li><a href="">Menu04</a></li>
       </ul>
 
-    <div class="img-box">
+    <div class="img-box1">
     
       <img class="left" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
       <img class="back"  src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="">
       <img class="right"  src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt=""> 
+    </div>
+
+    <div class="text">
+      <p>進化し続ける「街」アメリカンビレッジマガジン</p>
     </div>
 
    </header>
