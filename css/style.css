@@ -7,10 +7,11 @@ body {
 
 
 .footer-main{
-    width: 1996px;
+    width: 1152px;
     background-color: black;
     color: white;
     height: 128px;
+    text-align: center;
 }
 header {
     width: 100%;
@@ -18,7 +19,13 @@ header {
    
 }
 .main{
-    margin-top: 100px;
+    width: 1125px;
+}
+.title-text{
+    text-align: center;
+    margin: 0 auto;
+    
+    font-size: 30px;
 }
 .img-box1{
     margin-left: 200px;
