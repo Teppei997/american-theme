@@ -8,6 +8,18 @@ body {
 .text {
    margin-top: 300px;
 }
+.footer-container{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 128px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.footer-main{
+    margin: 0 auto;
+}
 
 header {
     width: 100%;
@@ -21,6 +33,7 @@ header {
 
 .text {
     font-size: 25px;
+    
 }
 
 .menu {
@@ -83,7 +96,11 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 20px;
+<<<<<<< HEAD
     
+=======
+    margin-left:0px;
+>>>>>>> master
 }
 
 .articles-box {
@@ -95,7 +112,7 @@ header {
     -webkit-transition: all .3s;
     transition: all .3s;
     margin-right: 40px;
-    width: 320px;
+    width: 300px;
     height: 400px;
 }
 
