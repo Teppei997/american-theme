@@ -6,12 +6,17 @@ body {
 }
 
 
-.footer-main{
-    width: 1152px;
+.footer-container{
+    width: 100%;
     background-color: black;
     color: white;
     height: 128px;
-    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.footer-main{
+    margin: 0 auto;
 }
 header {
     width: 100%;
