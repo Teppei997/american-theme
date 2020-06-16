@@ -71,7 +71,8 @@ header {
     width: 1024px;
     height: 448px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    right: 200px;
 }
 .right{
     z-index: 2;
