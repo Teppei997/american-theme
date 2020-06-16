@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 <div class="main">
 
-
-
 <?php if (have_posts()):?>
 <!-- 投稿がある場合 -->
   <h2>Latest Articles</h2>
