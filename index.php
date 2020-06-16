@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 <div class="main">
+    <div class="text">
+      <p>進化し続ける「街」アメリカンビレッジマガジン</p>
+    </div>
     <h2 class="title-text" >Latest Articles</h2>
 
 <?php if (have_posts()):?>
