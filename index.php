@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <div class="main">
+    <h2 class="title-text" >Latest Articles</h2>
 
 <?php if (have_posts()):?>
 <!-- 投稿がある場合 -->
-  <h2>Latest Articles</h2>
   <ul class="articles">
       <?php while(have_posts()): the_post(); ?>
         <div class="articles-box">
