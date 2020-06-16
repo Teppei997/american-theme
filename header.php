@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="<?php echo get_template_directory_uri(); ?>/app.js" defer ></script>
     <?php wp_head(); ?>
@@ -13,7 +13,7 @@
 <body>
 
 　　<header>
-      <ul>
+      <ul class="menu">
         <li><a href="">Menu01</a> </li>
         <li><a href="">Menu02</a></li>
         <li><a href="">Menu03</a></li>
