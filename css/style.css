@@ -5,12 +5,18 @@ body {
     margin: 0 auto;
 }
 
-
-.footer-main{
-    width: 1996px;
+.footer-container{
+    width: 100%;
     background-color: black;
     color: white;
     height: 128px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-main{
+    margin: 0 auto;
 }
 header {
     width: 100%;
@@ -80,7 +86,7 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    margin-left: 200px;
+    
 }
 
 .articles-box {
@@ -116,6 +122,7 @@ header {
 .img-box p {
     margin-top: 15px;
 }
+
 
 @media screen and ( max-width:767px) {
 
