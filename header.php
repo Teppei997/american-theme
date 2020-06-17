@@ -22,11 +22,17 @@
 
     <div class="img-box1">
     
-      <img class="left" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
-      <img class="back"  src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="">
-      <img class="right"  src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt=""> 
+      <img class="left u-pc" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+      <img class="left u-sp" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
+
+      <img class="back u-pc"  src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="">
+      <img class="back u-sp"  src="<?php echo get_template_directory_uri(); ?>/img/visual_1_sp.png" alt="">
+
+      <img class="right u-pc"  src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt=""> 
+      <img class="right u-sp"  src="<?php echo get_template_directory_uri(); ?>/img/visual_text_sp.png" alt=""> 
+
     </div>
 
-    
+  　　　　
 
    </header>
