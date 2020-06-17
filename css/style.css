@@ -29,10 +29,16 @@ header {
 
 .text {
     font-size: 25px;
+    width: 100%;
+    text-align: left;
 }
 
 .text p {
     margin-bottom: 80px;
+}
+
+.sp-br{
+    display: none;
 }
 
 .title-text{
@@ -58,6 +64,8 @@ header {
 
 .menu li a {
     text-decoration: none;
+    color: black;
+    font-size: 14px;
 }
 
 .img-box1 {
@@ -66,11 +74,11 @@ header {
 
 .left{
     
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     right: 800px;
     top: 100px;
-    left: 80px;
+    left: 144px;
 }
 .back{
     z-index: 1;
@@ -96,7 +104,6 @@ header {
 .title-text{
     text-align: center;
     margin: 0 auto;
-    
     font-size: 30px;
 }
 
@@ -117,7 +124,7 @@ header {
     -webkit-transition: all .3s;
     transition: all .3s;
     position: relative;
-    width: 300px;
+    width: 310px;
     height: 400px;
 }
 
@@ -147,11 +154,35 @@ header {
     font-size: 12px;
     color: black ;
     text-decoration: none;
-    /* text-align: right; */
+
     position: absolute;
     right: 20px;
     bottom: 30px;
+    width: 71px;
 }
+
+.read-more::after {
+    content: "";
+    display: block;
+    margin: 25px auto 0;
+    border-bottom: 1px solid black;
+    width: 16px;
+    position: absolute;
+    margin-top: 15px;
+    left: 52px;
+}
+
+
+.read-more:hover::after{
+    width: 71px;
+    transform: scale(1, 1);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    position: absolute;
+    left: 0;
+}
+
+
 
 .footer-container{
     width: 100%;
@@ -161,6 +192,7 @@ header {
     font-size: 16px;
     display: flex;
     align-items: center;
+    margin-top: 127px;
 }
 
 .footer-main{
@@ -169,9 +201,18 @@ header {
 
 
 @media screen and ( max-width:767px) {
+    body{
+        max-width: 767px;
+    }
+    .text p {
+        width: 410px;
+        font-size: 32px;
+        align-items: center;
+    }
+
+    .sp-br {
+        display: block;
+    }
 
 }
 
-
-@media screen and (min-width:768px) and ( max-width:1152px) {
-}
