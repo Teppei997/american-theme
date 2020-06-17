@@ -29,10 +29,16 @@ header {
 
 .text {
     font-size: 25px;
+    width: 100%;
+    text-align: left;
 }
 
 .text p {
     margin-bottom: 80px;
+}
+
+.sp-br{
+    display: none;
 }
 
 .title-text{
@@ -54,6 +60,8 @@ header {
 
 .menu li a {
     text-decoration: none;
+    color: black;
+    font-size: 14px;
 }
 
 .img-box1 {
@@ -64,9 +72,11 @@ header {
 
 .left.u-pc{
     
+
     position: absolute;
     left: -50px;
     top: -100px;
+
 }
 .back.u-pc{
     width: 1024px;
@@ -99,7 +109,6 @@ header {
 .title-text{
     text-align: center;
     margin: 0 auto;
-    
     font-size: 30px;
 }
 
@@ -120,7 +129,7 @@ header {
     -webkit-transition: all .3s;
     transition: all .3s;
     position: relative;
-    width: 300px;
+    width: 310px;
     height: 400px;
 }
 
@@ -150,20 +159,17 @@ header {
     font-size: 12px;
     color: black ;
     text-decoration: none;
-    /* text-align: right; */
+
     position: absolute;
     right: 20px;
     bottom: 30px;
+    width: 71px;
 }
 
-
-.footer-main{
-    margin: 0 auto;
-}
 
 
 @media screen and ( max-width:767px) {
-    
+
 
     body{
         margin: 0 auto;
@@ -212,9 +218,17 @@ header {
     .footer-main{
         width: 100%;
         display: flex;
+
+    .text p {
+        width: 410px;
+        font-size: 32px;
+
         align-items: center;
     }
 
-}
+    .sp-br {
+        display: block;
+    }
 
+}
 
