@@ -11,14 +11,41 @@
     <?php wp_head(); ?>
 </head>
 <body>
-
 　　<header>
-      <ul class="menu">
-        <li><a href="">Menu01</a> </li>
-        <li><a href="">Menu02</a></li>
-        <li><a href="">Menu03</a></li>
-        <li><a href="">Menu04</a></li>
-      </ul>
+    <!-- Navigation -->
+    <nav id="navi" class="navi" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <div id="navi-in" class="navi-in">
+      <?php wp_nav_menu(
+        array (
+          //カスタムメニュー名
+          'theme_location' => 'header-navi',
+          //コンテナを表示しない
+          'container' => false,
+          //カスタムメニューを設定しない際に固定ページでメニューを作成しない
+          'fallback_cb' => false,
+          //出力されるulに対してidやclassを表示しない
+          'items_wrap' => '<ul>%3$s</ul>',
+        )
+      ); ?>
+      </div><!-- /#navi-in -->
+    </nav>
+<!-- /Navigation -->
+      <!-- class="drawer drawer--left" の2つが追加されるように -->
+<body <?php body_class( ['drawer', 'drawer--left'] ); ?>>
+
+<!-- 中略 -->
+
+<!-- ハンバーガーボタン -->
+<button type="button" class="drawer-toggle drawer-hamburger"><i class="fa fa-bars" aria-hidden="true"></i></button>
+<!-- ナビゲーションの中身 -->
+<nav class="drawer-nav" role="navigation">
+  <!-- メニューの読み込み -->
+  <?php wp_nav_menu( array( 'theme_location' => 'my-drawer', 'menu_class' => 'drawer-menu', 'container' => false, 'depth' => 1 ) ); ?>
+</nav>
+
+<!-- 中略 -->
+
+      
 
     <div class="img-box1">
     
