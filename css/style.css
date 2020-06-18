@@ -236,7 +236,7 @@ header {
         margin: 0 auto;
         width: 100%;
 
-        /* text-align: center; */
+        
     }
     .text p {
         font-size: 32px;
@@ -260,13 +260,14 @@ header {
     }
 
     .articles-box{
-        width: 100%;
+        width: 80%;
     }
     .img-box a {
         font-size: 12px;
     }
 
     .img-box p {
+        margin-top: 0px;
         font-size: 15px;
         line-height: 30px;
         margin-left: 10px;
@@ -326,6 +327,7 @@ header {
         display: flex;
         align-items: center;
         flex-direction: column;
+       
     }    
     .footer-main{
         width: 100%;
@@ -337,8 +339,9 @@ header {
       
     .img-box{
         display: flex;
+        
         flex-direction: column;
-        width: 85%;
+        width: 100%;
     }    
     .img-box img {
         width: 100%;
