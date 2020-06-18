@@ -13,7 +13,6 @@ body {
     font-size: 16px;
     display: flex;
     align-items: center;
-    margin-top: 40px;
 }
 .footer-main{
     margin: 0 auto;
@@ -46,6 +45,7 @@ header {
     padding-bottom: 55px;
     font-size: 30px;
 }
+
 
 .img-box1 {
     text-align: center;
@@ -171,10 +171,10 @@ header {
 @media screen and ( max-width:767px) {
     body{
         max-width: 767px;
-        overflow: hidden;
+        margin: 0 auto;
+        width: 100%;
+        /* text-align: center; */
     }
-
-
     .text p {
         font-size: 32px;
         text-align: center;
@@ -192,7 +192,6 @@ header {
     }
 
     .articles{
-        text-align: center;
         width: 80%;
         height: 100%;
     }
@@ -212,18 +211,20 @@ header {
     }
 
     .img-box a {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .img-box p {
         font-size: 15px;
+        line-height: 30px;
+        margin-left: 10px;
     }
- 
 
-    body{
-        margin: 0 auto;
-        width: 100%;
+    
+    .read-more{
+        margin-top: 100px;
     }
+
     .main{
         width: 100%;
     }
@@ -249,7 +250,8 @@ header {
     .right.u-sp{
         display: block;
         position: absolute;
-        top: 300px;
+        width: 100%;
+        top: 250px;
         z-index: 2;
     }
     .right.u-pc{
@@ -259,15 +261,9 @@ header {
         display: none;
     }
 
-
-    .articles{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
     .footer-main{
         width: 100%;
-        display: flex;
+        text-align: center;
     }
 
 }
