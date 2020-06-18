@@ -47,6 +47,7 @@ header {
 }
 
 
+
 .img-box1 {
     text-align: center;
     position: relative;
@@ -80,9 +81,7 @@ header {
 
 }
 
-.main{
-    width: 1125px;
-}
+
 
 .title-text{
     text-align: center;
@@ -166,13 +165,77 @@ header {
     left: 0;
 }
 
-
+.navi-in{
+    /*幅を整える場合はwidthを設定する*/
+    width: 100%;
+  }
+  .navi-in > ul {
+    padding: 0;
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  .navi-in > ul li {
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+  }
+  .navi-in > ul li:hover > ul {
+    display: block;
+  }
+  /*サブメニュー*/
+  .navi-in > ul .sub-menu {
+    display: none;
+    position: absolute;
+    margin-left: 0;
+    min-width: 240px;
+    list-style: none;
+    padding-left: 0;
+    background-color: #fafafa;
+    z-index: 99;
+    text-align: left;
+  }
+  .navi-in > ul .sub-menu li {
+    width: auto;
+  }
+  .navi-in > ul .sub-menu a {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  /*サブメニューのサブメニュー*/
+  .navi-in > ul .sub-menu ul {
+    top: -50px;
+    left: 240px;
+    position: relative;
+  }
+  .navi-in a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+  }
+  .navi-in a:hover {
+    background-color: #f3f3f3;
+    transition: all 0.3s ease 0s;
+  }
+  .navi-in a:hover > ul {
+    display: block;
+  }
 
 @media screen and ( max-width:767px) {
+    .navi{
+        display: none;
+    }    
+  
     body{
         max-width: 767px;
         margin: 0 auto;
         width: 100%;
+
         /* text-align: center; */
     }
     .text p {
@@ -199,17 +262,6 @@ header {
     .articles-box{
         width: 100%;
     }
-
-    .img-box {
-        width: 100%;
-        height: 100%;
-    }
-
-    .img-box img {
-        width: 100%;
-        height: 50%;
-    }
-
     .img-box a {
         font-size: 12px;
     }
@@ -225,31 +277,40 @@ header {
         margin-top: 100px;
     }
 
+  
+
     .main{
         width: 100%;
-    }
+    }    
     .img-box1{
+        /* position: relative; */
+       
         margin-bottom: 50px;
-    }
+    }    
     .left.u-sp{
         display: block;
         margin: 0 auto;
-    }
+    }    
     .left.u-pc{
         display: none;
-    }
+    }    
     .back.u-sp{
-        z-index: 1;
+        /* position: absolute; */
+        /* z-index: 1; */
+        position: relative;
         display: block;
         width: 100%;
-        height: auto;
-    }
+        margin-top: 30px;
+
+    }    
+
     .back.u-pc{
         display: none;
-    }
+    }    
     .right.u-sp{
         display: block;
         position: absolute;
+
         width: 100%;
         top: 250px;
         z-index: 2;
@@ -260,11 +321,59 @@ header {
     .menu{
         display: none;
     }
-
+    .articles{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }    
     .footer-main{
         width: 100%;
-        text-align: center;
-    }
+        height: 128px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }     
+      
+    .img-box{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }    
+    .img-box img {
+        width: 100%;
+        height: auto;
+    }    
+    .drawer-nav {
+        
+        background: #666;
+        box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.12);
+        z-index: 10;
+      }  
+      
+      .drawer-nav .drawer-menu-item {
+        margin-top: 50px;  
+      }  
+      
+      .drawer-nav .drawer-menu-item > a {
+        display: block;  
+        padding: 1rem 1rem 1rem 2.5rem;
+        padding: 1rem;
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      }  
+      
+      .drawer--left.drawer-open .drawer-hamburger {
+        
+        left: 0;  
+      }  
+      .drawer-hamburger{
+          position: static !important;
+          
+      }    
+    
+    
+}      
 
-}
 
