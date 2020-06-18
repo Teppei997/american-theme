@@ -1,1 +1,4 @@
-$(document).ready
+jQuery( function( $ ) {
+    $( '.drawer' ).drawer();
+  });
+
