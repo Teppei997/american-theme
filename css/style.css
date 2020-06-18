@@ -47,23 +47,6 @@ header {
     font-size: 30px;
 }
 
-.menu {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
-.menu li {
-    margin-left: 20px;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-}
-
 .img-box1 {
     text-align: center;
     position: relative;
@@ -125,6 +108,7 @@ header {
     position: relative;
     width: 310px;
     height: 400px;
+    margin-bottom: 60px;
 }
 
 .articles-box:hover {
@@ -187,7 +171,10 @@ header {
 @media screen and ( max-width:767px) {
     body{
         max-width: 767px;
+        overflow: hidden;
     }
+
+
     .text p {
         font-size: 32px;
         text-align: center;
@@ -206,24 +193,31 @@ header {
 
     .articles{
         text-align: center;
-        width: 70%;
+        width: 80%;
         height: 100%;
     }
 
     .articles-box{
         width: 100%;
-        height: 600px;
     }
 
     .img-box {
         width: 100%;
-        /* height: auto; */
+        height: 100%;
     }
 
     .img-box img {
         width: 100%;
+        height: 50%;
     }
 
+    .img-box a {
+        font-size: 15px;
+    }
+
+    .img-box p {
+        font-size: 15px;
+    }
  
 
     body{

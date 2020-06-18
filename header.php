@@ -13,13 +13,7 @@
 <body>
 
 　　<header>
-      <ul class="menu">
-        <li><a href="">Menu01</a> </li>
-        <li><a href="">Menu02</a></li>
-        <li><a href="">Menu03</a></li>
-        <li><a href="">Menu04</a></li>
-      </ul>
-
+    
     <div class="img-box1">
     
       <img class="left u-pc" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
@@ -33,6 +27,5 @@
 
     </div>
 
-  　　　　
 
    </header>
