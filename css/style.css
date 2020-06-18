@@ -20,7 +20,6 @@ body {
 
 header {
     width: 100%;
-    
 }
 
 .main{
@@ -56,14 +55,11 @@ header {
 }
 
 .left.u-pc{
-    
-
     position: absolute;
     left: -50px;
     top: -100px;
 
 }
-
 
 .right.u-pc{
     
@@ -97,7 +93,6 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 20px;
     margin: 0 auto;
 }
 
@@ -112,6 +107,7 @@ header {
     position: relative;
     width: 310px;
     height: 400px;
+    margin-bottom: 60px;
 }
 
 .articles-box:hover {
@@ -122,12 +118,12 @@ header {
 }
 
 .img-box {
-    width: 300px;
+    width: 310px;
     height: 400px;
 }
 
 .img-box img {
-    width: 300px;
+    width: 310px;
     height: 205px;
 }
 
@@ -148,7 +144,26 @@ header {
 }
 
 
+.read-more::after {
+    content: "";
+    display: block;
+    margin: 25px auto 0;
+    border-bottom: 1px solid black;
+    width: 16px;
+    position: absolute;
+    margin-top: 15px;
+    left: 52px;
+}
 
+
+.read-more:hover::after{
+    width: 71px;
+    transform: scale(1, 1);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    position: absolute;
+    left: 0;
+}
 
 .navi-in{
     /*幅を整える場合はwidthを設定する*/
@@ -215,12 +230,55 @@ header {
     .navi{
         display: none;
     }    
-
-
+  
     body{
+        max-width: 767px;
         margin: 0 auto;
         width: 100%;
-    }    
+
+        /* text-align: center; */
+    }
+    .text p {
+        font-size: 32px;
+        text-align: center;
+        overflow: hidden;
+        line-height: 55px;
+    }
+
+    .title-text {
+        font-size: 60px;
+    }
+
+
+    .sp-br {
+        display: block;
+    }
+
+    .articles{
+        width: 80%;
+        height: 100%;
+    }
+
+    .articles-box{
+        width: 100%;
+    }
+    .img-box a {
+        font-size: 12px;
+    }
+
+    .img-box p {
+        font-size: 15px;
+        line-height: 30px;
+        margin-left: 10px;
+    }
+
+    
+    .read-more{
+        margin-top: 100px;
+    }
+
+  
+
     .main{
         width: 100%;
     }    
@@ -245,19 +303,24 @@ header {
         margin-top: 30px;
 
     }    
+
     .back.u-pc{
         display: none;
     }    
     .right.u-sp{
         display: block;
         position: absolute;
-        top: 300px;
-        /* z-index: 2; */
-    }    
+
+        width: 100%;
+        top: 250px;
+        z-index: 2;
+    }
     .right.u-pc{
         display: none;
-    }    
-    
+    }
+    .menu{
+        display: none;
+    }
     .articles{
         width: 100%;
         display: flex;
@@ -271,9 +334,7 @@ header {
         justify-content: center;
         align-items: center;
     }     
-    .articles-box {
-        width: 100%;
-    }    
+      
     .img-box{
         display: flex;
         flex-direction: column;
@@ -314,4 +375,5 @@ header {
     
     
 }      
+
 

@@ -12,6 +12,7 @@
 </head>
 <body>
 　　<header>
+
     <!-- Navigation -->
     <nav id="navi" class="navi" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <div id="navi-in" class="navi-in">
@@ -47,6 +48,7 @@
 
       
 
+
     <div class="img-box1">
     
       <img class="left u-pc" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
@@ -60,6 +62,5 @@
 
     </div>
 
-  　　　　
 
    </header>
