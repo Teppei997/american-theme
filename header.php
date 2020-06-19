@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="<?php echo get_template_directory_uri(); ?>/app.js" defer ></script>
     <?php wp_head(); ?>
+    
 </head>
 <body>
 　　<header>
@@ -44,8 +45,8 @@
   <?php wp_nav_menu( array( 'theme_location' => 'my-drawer', 'menu_class' => 'drawer-menu', 'container' => false, 'depth' => 1 ) ); ?>
 </nav>
 
-<!-- 中略 -->
-
+<!-- 中略 -->   
+   
       
 
 

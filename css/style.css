@@ -262,10 +262,7 @@ header {
     .articles-box{
         width: 80%;
     }
-    .img-box a {
-        font-size: 12px;
-    }
-
+    
     .img-box p {
         margin-top: 0px;
         font-size: 15px;
@@ -276,9 +273,9 @@ header {
     
     .read-more{
         margin-top: 100px;
+        font-size: 12px;
     }
 
-  
 
     .main{
         width: 100%;
@@ -339,13 +336,13 @@ header {
       
     .img-box{
         display: flex;
-        
         flex-direction: column;
         width: 100%;
+        height: auto;
     }    
     .img-box img {
         width: 100%;
-        height: auto;
+        height: 50%;
     }    
     .drawer-nav {
         
