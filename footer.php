@@ -1,7 +1,7 @@
 <footer>
     <div class="footer-container">
 
-      <p class="footer-main">&copy; 2019 ALL RIGHT RESERVED</p>
+      <p class="footer-main"> Copyright &copy; Shinohara. ALL RIGHT RESERVED</p>
     </div>
 </footer>
 
